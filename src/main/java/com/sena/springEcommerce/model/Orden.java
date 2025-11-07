@@ -23,6 +23,7 @@ public class Orden {
 	
 	@ManyToOne
 	private Usuario usuario;
+	
 	@OneToMany(mappedBy = "orden")
 	private List<DetalleOrden> detalle;
 	

@@ -25,6 +25,7 @@ public class Usuario {
 	// relaciones en DB
 	@OneToMany(mappedBy = "usuario")
 	private List<Producto> productos;
+	
 	@OneToMany(mappedBy = "usuario")
 	private List<Orden> ordenes;
 
